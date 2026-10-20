@@ -1,6 +1,15 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
+<!-- Google tag (gtag.js) — F5 Flow Google Ads -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18485678201"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18485678201');
+</script>
+<link rel="icon" type="image/jpeg" sizes="1254x1254" href="/favicon.jpg?v=20261020">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="color-scheme" content="light dark">
@@ -50,21 +59,13 @@
   if (!hasGA4 || window.__f5TrackingInstalled) return;
   window.__f5TrackingInstalled = true;
 
-  function loadScript(src) {
-    var script = document.createElement('script');
-    script.async = true;
-    script.src = src;
-    document.head.appendChild(script);
-  }
 
   if (hasGA4) {
     window.dataLayer = window.dataLayer || [];
     window.gtag = window.gtag || function () {
       window.dataLayer.push(arguments);
     };
-    window.gtag('js', new Date());
     window.gtag('config', config.ga4Id);
-    loadScript('https://www.googletagmanager.com/gtag/js?id=' + config.ga4Id);
   }
 
   function cleanText(text) {
